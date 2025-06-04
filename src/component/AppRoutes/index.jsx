@@ -10,8 +10,6 @@ import Products from '../../layout/Products'
 import NotFound from '../../layout/NotFound'
 import FeaturedProducts from '../../layout/FeaturedProduct'
 import NewProducts from '../../layout/NewProducts'
-import Form from '../../layout/Form'
-import Age from '../age'
 
 export const AppRoutes = ({ isAuthenticated, handleLogin }) => {
   return (
@@ -20,8 +18,6 @@ export const AppRoutes = ({ isAuthenticated, handleLogin }) => {
         <Route path='/user/:userId' element={<User />} />
         <Route path='/search' element={<Search />} />
         <Route path='/login' element={<Login onLogin={handleLogin} />} />
-        <Route path='/form' element={<Form onLogin={handleLogin}/>} />
-        <Route path='/age' element={<Age />} />
 
 
     <Route
